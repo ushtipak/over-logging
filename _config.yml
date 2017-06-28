@@ -5,7 +5,7 @@ description: Egg and spam; egg bacon and spam; egg bacon sausage and spam;
   spam sausage spam spam bacon spam tomato and spam;
 baseurl: ""
 url: "http://ushtipak.github.io"
-github_username:  ushtipak
+github_username: ushtipak
 markdown: kramdown
 theme: minima
 gems:

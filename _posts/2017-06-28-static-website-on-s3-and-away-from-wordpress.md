@@ -45,16 +45,16 @@ S3, and below is the brief outline of how to achieve that in a quick fashion
 # Up and away
 
 We're using _quickstart-website_ bootstrap from AWS in order to speed up content
-upload, but we're not relying on CloudFront or Route 53 which go alond with.
+upload, but we're not relying on _CloudFront_ or _Route 53_ which go alond with.
 Latter is related to DNS setup, while most rely on their domain provider, and
 the CF part is about enabling HTTPS over S3 and distributing content
 geographically. In case of our office share business, neither was needed, but
-if you require any of above mentioned, simply point you domain to retrieved
-URL from CloudFront and enjoy
+if you require any of above, use URL from _CloudFront_ as your domain's CNAME
+and enjoy
 
 We'll be creating a separate user for hosting as a good practice to distinguish
 projects, users and permissions. Uploading website content will be next, followed
-up with disabling automatically created CloudFront distribution(s). Bucket
+up with disabling automatically created _CloudFront_ distribution(s). Bucket
 replication with permissions, policies, and _Static website hosting_ setup
 follows and last step is simply pointing your domain to S3 bucket via a CNAME
 and happily reloading
@@ -104,14 +104,14 @@ setup via AWS CLI
 
 ![AWS CloudFront distributions]({{ site.url }}/assets/aws-cloudfront-distributions.png)
 
-> Disabling might take time, so keep track of it's status
+> Disabling might take time, keep track of it's status
 
 
 ## Replicate bucket
 
 * Go to
 <a href="https://console.aws.amazon.com/s3" target="_blank">console.aws.amazon.com/s3</a>
-  * Select your new automatically created bucket
+  * Select your new, automatically created bucket
 
 * Mark all objects and select _Copy_
 
@@ -130,12 +130,12 @@ Redirect requests to original one
 
 * From same, newest bucket, select _Static website hosting_ from _Properties_
   * Choose _Use this bucket to host a website_ and set index (_index.html_ in most cases)
-  * Note the Endpoint link in the first line
+  * Note the _Endpoint_ link in the first line
 
 ![AWS AWS S3 hosting endpoint]({{ site.url }}/assets/aws-s3-hosting-endpoint.png)
 
 * Select _Bucket Policy_ from _Permissions_ tab
-  * Create policy to allow object get per AWS
+  * Create policy to allow object get, per AWS
   <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html" target="_blank">reference</a>
 
     {% highlight json %}
@@ -165,10 +165,10 @@ Redirect requests to original one
 
 * Update DNS record within your domain provider
   * Set retrieved endpoint as a CNAME record
-  * (Optionally) add {,www.} as another CNAME
+  * (Optionally) add {,www.} as another
 
 
 # Takeaways
 
-Distributed web based storage is good, read the small prints and stay in school
+Distributed web-based storage is good, read the small prints and stay in school
 

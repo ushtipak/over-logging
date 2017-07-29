@@ -8,5 +8,5 @@ url: "https://ushtipak.github.io/over-logging"
 github_username: ushtipak
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed

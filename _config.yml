@@ -3,8 +3,8 @@ email: ushtipak@gmail.com
 description: Egg and spam; egg bacon and spam; egg bacon sausage and spam;
   spam bacon sausage and spam; spam egg spam spam bacon and spam;
   spam sausage spam spam bacon spam tomato and spam;
-baseurl: ""
-url: "https://ushtipak.github.io/over-logging"
+baseurl: /over-logging
+url: https://ushtipak.github.io
 github_username: ushtipak
 markdown: kramdown
 theme: minima

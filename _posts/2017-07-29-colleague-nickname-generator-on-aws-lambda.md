@@ -28,7 +28,7 @@ Creating a λ function is trivial – from given _hello-world_ example, without
 initial trigger, apply <a href="https://github.com/ushtipak/shiftoslav/blob/master/shiftoslav.py"
  target="_blank">code</a> gently
 
-![AWS Lambda code]({{ site.url }}/assets/aws-lambda-code.png)
+![AWS Lambda code]({{ site.url }}{{ site.baseurl }}/assets/aws-lambda-code.png)
 
 Based on above `lambda_handler` function name – and the fact we're using Python –
 here is the overview of configuration options
@@ -68,7 +68,7 @@ Three out of four pillars of non-intuitive method execution setup (_Method
 Re{quest,sponse}_, _Integration Re{quest,sponse}_) need to be tweaked in
 order to achieve that
 
-![AWS API gateway method execution]({{ site.url }}/assets/aws-api-gateway-method-execution.png)
+![AWS API gateway method execution]({{ site.url }}{{ site.baseurl }}/assets/aws-api-gateway-method-execution.png)
 
 Changes on the _Integration Request_ are basic
 
@@ -110,7 +110,7 @@ Body Mapping Templates:
 > Content-Type is entered **with** single quotes and all JSON fields from
 lambda are accessed via `inputRoot._`
 
-![AWS API gateway integration response]({{ site.url }}/assets/aws-api-gateway-integration-response.png)
+![AWS API gateway integration response]({{ site.url }}{{ site.baseurl }}/assets/aws-api-gateway-integration-response.png)
 
 Last step before hitting _Actions / Deploy API_ is adding "Content-Type" within
 _Method Response_ and modifying response body for HTTP 200
@@ -133,5 +133,5 @@ All that's left is to enjoy fresh FaaS
 <a href="https://o5bsrqjdtl.execute-api.us-east-1.amazonaws.com/live"
  target="_blank">Shift-O-Slav name generator</a>
 
-![Shift-O-Slav]({{ site.url }}/assets/shift-o-slav.png)
+![Shift-O-Slav]({{ site.url }}{{ site.baseurl }}/assets/shift-o-slav.png)
 

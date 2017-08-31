@@ -28,7 +28,7 @@ irritating and unfair, so we decided to move our landing page away from this
 tyranny and redo it in the same time
 
 For the task of rebuilding the page, we used a free tool called
-<a href="https://mobirise.com" target="_blank">Mobirise</a> and patched up a
+[Mobirise](https://mobirise.com "Mobirise") and patched up a
 fine single page in a few hours. A few pictures here and there, pricing model
 with benefits of different tiers, location and other ways of reaching us, all
 sprinkled with a parallax or two, since everyone seems to like these today
@@ -63,7 +63,7 @@ and happily reloading
 ## IAM
 
 * Go to
-<a href="https://console.aws.amazon.com/iam" target="_blank">console.aws.amazon.com/iam</a>
+[console.aws.amazon.com/iam](https://console.aws.amazon.com/iam "console.aws.amazon.com/iam")
   * Make a note of IAM users sign-in link, for logging with non-root account
 
 * Create user
@@ -82,7 +82,7 @@ available for retrieval afterwards
 ## Host a static website
 
 * Login with new user and go to
-<a href="https://console.aws.amazon.com/quickstart-website" target="_blank">console.aws.amazon.com/quickstart-website</a>
+[console.aws.amazon.com/quickstart-website](https://console.aws.amazon.com/quickstart-website "console.aws.amazon.com/quickstart-website")
 
 * Select _Your website_
   * Upload your entire site in ZIP
@@ -96,7 +96,7 @@ setup via AWS CLI
 ## Disable CloudFront
 
 * Go to
-<a href="https://console.aws.amazon.com/cloudfront" target="_blank">console.aws.amazon.com/cloudfront</a>
+[console.aws.amazon.com/cloudfront](https://console.aws.amazon.com/cloudfront "console.aws.amazon.com/cloudfront")
 
 * Disable and delete distributions
   * If reduntant distributions have been created, select one and choose delete
@@ -110,7 +110,7 @@ setup via AWS CLI
 ## Replicate bucket
 
 * Go to
-<a href="https://console.aws.amazon.com/s3" target="_blank">console.aws.amazon.com/s3</a>
+[console.aws.amazon.com/s3](https://console.aws.amazon.com/s3 "console.aws.amazon.com/s3")
   * Select your new, automatically created bucket
 
 * Mark all objects and select _Copy_
@@ -136,7 +136,7 @@ Redirect requests to original one
 
 * Select _Bucket Policy_ from _Permissions_ tab
   * Create policy to allow object get, per AWS
-  <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html" target="_blank">reference</a>
+    [reference](http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html "reference")
 
     {% highlight json %}
     {
@@ -158,7 +158,7 @@ Redirect requests to original one
 ![AWS AWS S3 hosting endpoint]({{ site.url }}{{ site.baseurl }}/assets/aws-s3-bucket-policy.png)
 
 > Note that buket policy Versions cannot be arbitrary, but predefined
-<a href="https://aws.amazon.com/blogs/security/back-to-school-understanding-the-iam-policy-grammar/" target="_blank">values</a>
+[values](https://aws.amazon.com/blogs/security/back-to-school-understanding-the-iam-policy-grammar/ "values")
 
 
 ## CNAME the endpoint

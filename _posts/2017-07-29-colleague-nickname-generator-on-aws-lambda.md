@@ -11,10 +11,10 @@ Why? Noone remembers exactly, but after a few days, it was obvious that the
 process needed to be automated
 
 Good friend of mine created music "artist" name generator and shared it with
-the world as a legendary <a href="http://polumenta.zardina.org/" target="_blank">
-Polumenta generator</a>. He <a href="https://github.com/vl4dimir/polumenta"
- target="_blank">open-sourced</a> it, so shameless code stealing was obviously
-the way to go
+the world as a legendary
+[Polumenta generator](http://polumenta.zardina.org/ "Polumenta generator").
+He [open-sourced](https://github.com/vl4dimir/polumenta/ "Polumenta source code")
+it, so shameless code stealing was obviously the way to go
 
 Script was Python-ized with minor adjustment of adding another ponderized last
 character, before necessary "слав" ending, based on distribution of actual
@@ -25,8 +25,9 @@ names of it's kind. Base64 from indexed 1-bit palette image was supplied along
 # AWS Lambda
 
 Creating a λ function is trivial – from given _hello-world_ example, without
-initial trigger, apply <a href="https://github.com/ushtipak/shiftoslav/blob/master/shiftoslav.py"
- target="_blank">code</a> gently
+initial trigger, apply
+[code](https://github.com/ushtipak/shiftoslav/blob/master/shiftoslav.py "Shift-O-slav source code")
+gently
 
 ![AWS Lambda code]({{ site.url }}{{ site.baseurl }}/assets/aws-lambda-code.png)
 
@@ -130,8 +131,7 @@ Response Body for 200:
 Entry point for the function can now be found under _Invoke URL_ on the
 _Stages editor_, after API has been succesfully deployed.
 All that's left is to enjoy fresh FaaS
-<a href="https://o5bsrqjdtl.execute-api.us-east-1.amazonaws.com/live"
- target="_blank">Shift-O-Slav name generator</a>
+[Shift-O-Slav name generator](https://o5bsrqjdtl.execute-api.us-east-1.amazonaws.com/live "Shift-O-Slav")
 
 ![Shift-O-Slav]({{ site.url }}{{ site.baseurl }}/assets/shift-o-slav.png)
 

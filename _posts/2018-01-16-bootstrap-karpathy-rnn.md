@@ -148,7 +148,7 @@ type t2.micro – takes about 24 hours to complete
 
 Amid modeling, assuming you're anxious to see preliminary results, start
 another console and examine latest checkpoint file, as soon as cycles round up
-to 1k. Head out to `/opt/rnn-karpathy/cv` and sample with
+to 1k. Head out to `/opt/rnn-karpathy/` and sample with
 `sudo th sample.lua cv/* -gpuid -1`
 
 If, however, you want to test pre-provided input right away and generate some

@@ -18,7 +18,7 @@ independent pieces, which, most of the time, is not the case. Imagine predicting
 next character in a word without knowing the preceding one
 
 That's where RNNs come in place, with output of subsequent task directly
-dependent of the previous
+dependent on the previous
 
 ![ML meeting]({{ site.url }}{{ site.baseurl }}/assets/2018-01-16-bootstrap-karpathy-rnn/ml-meeting.png)
 

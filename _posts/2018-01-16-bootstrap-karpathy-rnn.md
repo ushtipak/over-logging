@@ -80,8 +80,8 @@ Other distros, ones not using apt, yum or zypper, can still use boostrap
 script by simply adding a flag `./setup-rnn.sh --ommit-dependency-installation`
 and the list of system packages required will be displayed on start of it's run 
 
-In any case, after 40-ish bash script completes it's run, Torch framework is
-installed in `/opt/torch/`, while the repo ends up in `/opt/rnn-karpathy`
+In any case, after 40-ish lines bash script completes it's run, Torch framework
+is installed in `/opt/torch/`, while the repo ends up in `/opt/rnn-karpathy`
 
 ![RNN bootstrap]({{ site.url }}{{ site.baseurl }}/assets/2018-01-16-bootstrap-karpathy-rnn/rnn-bootstrap.png)
 
@@ -148,11 +148,11 @@ type t2.micro – takes about 24 hours to complete
 
 Amid modeling, assuming you're anxious to see preliminary results, start
 another console and examine latest checkpoint file, as soon as cycles round up
-on 1k. Head to `/opt/rnn-karpathy/cv` and sample with
+to 1k. Head out to `/opt/rnn-karpathy/cv` and sample with
 `sudo th sample.lua cv/* -gpuid -1`
 
-If, however, want to test pre-provided input right away and generate some of
-the Kind Richards paragraphs, Andrej neatly provided beforementioned
+If, however, you want to test pre-provided input right away and generate some
+of the Kind Richards paragraphs, Andrej neatly provided beforementioned
 `data/tinyshakespeare/input.txt`
 
 Here is the complete rundown on a fresh VM:

@@ -133,8 +133,8 @@ the rest
 # Playtime
 
 Post bootstrap, all that remains is to aim a terminal to `/opt/rnn-karpathy/`,
-provide a text source in `data/` subdir (remove `tinyshakespeare/` too) and
-fire up `sudo th train.lua -gpuid -1`
+provide a text source in `data/input.txt` (remove `tinyshakespeare/`) and fire
+up `sudo th train.lua -data_dir /opt/rnn-karpathy/data -gpuid -1`
 
 Console will display train loss, epoch and cycle duration and this is a great
 time to thank the `screen` command and step away from the server, since

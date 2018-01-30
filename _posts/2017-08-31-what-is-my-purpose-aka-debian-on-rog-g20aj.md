@@ -15,7 +15,7 @@ Q: _What is my purpose?_
 
 A: _You are a development workstation_
 
-![What is my purpose]({{ site.url }}{{ site.baseurl }}/assets/what-is-my-purpose.png)
+![What is my purpose]({{ site.url }}{{ site.baseurl }}/assets/2017-08-31-what-is-my-purpose-aka-debian-on-rog-g20aj/what-is-my-purpose.png)
 
 Strangely enough, it turned out that dual booting _G20AJ_ is not that easy
 

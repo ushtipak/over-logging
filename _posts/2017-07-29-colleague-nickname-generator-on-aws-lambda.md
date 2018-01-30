@@ -29,7 +29,7 @@ initial trigger, apply
 [code](https://github.com/ushtipak/shiftoslav/blob/master/shiftoslav.py "Shift-O-slav source code")
 gently
 
-![AWS Lambda code]({{ site.url }}{{ site.baseurl }}/assets/aws-lambda-code.png)
+![AWS Lambda code]({{ site.url }}{{ site.baseurl }}/assets/2017-07-29-colleague-nickname-generator-on-aws-lambda/aws-lambda-code.png)
 
 Based on above `lambda_handler` function name – and the fact we're using Python –
 here is the overview of configuration options
@@ -69,7 +69,7 @@ Three out of four pillars of non-intuitive method execution setup (_Method
 Re{quest,sponse}_, _Integration Re{quest,sponse}_) need to be tweaked in
 order to achieve that
 
-![AWS API gateway method execution]({{ site.url }}{{ site.baseurl }}/assets/aws-api-gateway-method-execution.png)
+![AWS API gateway method execution]({{ site.url }}{{ site.baseurl }}/assets/2017-07-29-colleague-nickname-generator-on-aws-lambda/aws-api-gateway-method-execution.png)
 
 Changes on the _Integration Request_ are basic
 
@@ -111,7 +111,7 @@ Body Mapping Templates:
 > Content-Type is entered **with** single quotes and all JSON fields from
 lambda are accessed via `inputRoot._`
 
-![AWS API gateway integration response]({{ site.url }}{{ site.baseurl }}/assets/aws-api-gateway-integration-response.png)
+![AWS API gateway integration response]({{ site.url }}{{ site.baseurl }}/assets/2017-07-29-colleague-nickname-generator-on-aws-lambda/aws-api-gateway-integration-response.png)
 
 Last step before hitting _Actions / Deploy API_ is adding "Content-Type" within
 _Method Response_ and modifying response body for HTTP 200
@@ -133,5 +133,5 @@ _Stages editor_, after API has been succesfully deployed.
 All that's left is to enjoy fresh FaaS
 [Shift-O-Slav name generator](https://o5bsrqjdtl.execute-api.us-east-1.amazonaws.com/live "Shift-O-Slav")
 
-![Shift-O-Slav]({{ site.url }}{{ site.baseurl }}/assets/shift-o-slav.png)
+![Shift-O-Slav]({{ site.url }}{{ site.baseurl }}/assets/2017-07-29-colleague-nickname-generator-on-aws-lambda/shift-o-slav.png)
 

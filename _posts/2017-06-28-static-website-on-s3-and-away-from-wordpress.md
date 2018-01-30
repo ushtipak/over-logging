@@ -73,7 +73,7 @@ and happily reloading
 * Attach policies
   * Add **AmazonS3FullAccess** and **CloudFrontFullAccess**
 
-![AWS IAM user permissions]({{ site.url }}{{ site.baseurl }}/assets/aws-iam-permissions.png)
+![AWS IAM user permissions]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-iam-permissions.png)
 
 > Write down Access key ID and **Secret access key**, since latter won't be
 available for retrieval afterwards
@@ -87,7 +87,7 @@ available for retrieval afterwards
 * Select _Your website_
   * Upload your entire site in ZIP
 
-![AWS Host a static website]({{ site.url }}{{ site.baseurl }}/assets/aws-static-website.png)
+![AWS Host a static website]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-static-website.png)
 
 > We're neatly skipping separate file upload to S3 which requires more time to
 setup via AWS CLI
@@ -102,7 +102,7 @@ setup via AWS CLI
   * If reduntant distributions have been created, select one and choose delete
   * Perform _Disable_ action on the remaining (or single one) and follow that up with deletion
 
-![AWS CloudFront distributions]({{ site.url }}{{ site.baseurl }}/assets/aws-cloudfront-distributions.png)
+![AWS CloudFront distributions]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-cloudfront-distributions.png)
 
 > Disabling might take time, keep track of it's status
 
@@ -115,7 +115,7 @@ setup via AWS CLI
 
 * Mark all objects and select _Copy_
 
-![AWS AWS S3 object copy]({{ site.url }}{{ site.baseurl }}/assets/aws-s3-object-copy.png)
+![AWS AWS S3 object copy]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-s3-object-copy.png)
 
 * Create a new bucket with *identical* name as your website
   * Select original bucket to copy settings from
@@ -132,7 +132,7 @@ Redirect requests to original one
   * Choose _Use this bucket to host a website_ and set index (_index.html_ in most cases)
   * Note the _Endpoint_ link in the first line
 
-![AWS AWS S3 hosting endpoint]({{ site.url }}{{ site.baseurl }}/assets/aws-s3-hosting-endpoint.png)
+![AWS AWS S3 hosting endpoint]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-s3-hosting-endpoint.png)
 
 * Select _Bucket Policy_ from _Permissions_ tab
   * Create policy to allow object get, per AWS
@@ -155,7 +155,7 @@ Redirect requests to original one
 
 > Update _Resource_ with your bucket / domain name
 
-![AWS AWS S3 hosting endpoint]({{ site.url }}{{ site.baseurl }}/assets/aws-s3-bucket-policy.png)
+![AWS AWS S3 hosting endpoint]({{ site.url }}{{ site.baseurl }}/assets/2017-06-28-static-website-on-s3-and-away-from-wordpress/aws-s3-bucket-policy.png)
 
 > Note that buket policy Versions cannot be arbitrary, but predefined
 [values](https://aws.amazon.com/blogs/security/back-to-school-understanding-the-iam-policy-grammar/ "values")

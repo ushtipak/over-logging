@@ -107,7 +107,7 @@ multiple train setups tested, three configurations yielded the most:
 |      128 ||||          4 ||||          2 ||||     0.5 |
 |      128 ||||          3 ||||          2 ||||     0.6 |
 
-Automated job title generation on a new VM, with last row's parameters for RNN
+Automated job title generation on a new VM, with last row's parameters for RNN,
 can be triggered via:
 
 {% highlight plaintext %}

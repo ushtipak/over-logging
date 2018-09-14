@@ -97,12 +97,12 @@ three times on each of the four _default_ EC2 Linux flavors
 Two things are interesting here – time to prepare everything and time to first
 processed sample, and here is how distributions stack up:
 
-|                              |||| install |||| checkpoint |
-|                              ||||---------||||------------|
-| Amazon Linux                 ||||   00:14 ||||      00:06 |
-| SUSE Linux Enterprise Server ||||   00:04 ||||      03:13 |
-| Red Hat Enterprise Linux     ||||   00:05 ||||      03:15 |
-| Ubuntu Server                ||||   00:05 ||||      03:04 |
+|                              | install | checkpoint |
+|                              |---------|------------|
+| Amazon Linux                 |   00:14 |      00:06 |
+| SUSE Linux Enterprise Server |   00:04 |      03:13 |
+| Red Hat Enterprise Linux     |   00:05 |      03:15 |
+| Ubuntu Server                |   00:05 |      03:04 |
 
 ![RNN bootstrap times]({{ site.url }}{{ site.baseurl }}/assets/2018-01-16-bootstrap-karpathy-rnn/rnn-bootstrap-times.png)
 > sherpa blue – bootstrap time; olive – processing first checkpoint

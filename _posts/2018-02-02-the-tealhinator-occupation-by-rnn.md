@@ -101,11 +101,11 @@ layers, dropouts, RNN and batch sizes
 On more than a dozen _t2.medium_ instances with _Amazon Linux 2_ planted, after 
 multiple train setups tested, three configurations yielded the most:
 
-| rnn_size |||| num_layers |||| batch_size |||| dropout |
-|----------||||------------||||------------||||---------|
-|      256 ||||          5 ||||          1 ||||     0.5 |
-|      128 ||||          4 ||||          2 ||||     0.5 |
-|      128 ||||          3 ||||          2 ||||     0.6 |
+| rnn_size | num_layers | batch_size | dropout |
+|----------|------------|------------|---------|
+|      256 |          5 |          1 |     0.5 |
+|      128 |          4 |          2 |     0.5 |
+|      128 |          3 |          2 |     0.6 |
 
 Automated job title generation on a new VM, with last row's parameters for RNN,
 can be triggered via:

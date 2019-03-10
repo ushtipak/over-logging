@@ -24,7 +24,6 @@ gadget's web-based IDE
 After the conference, however, factory reset was required
 ([RTFM](https://www.neonious.com/TPManual)),
 if one doesn't want to play with RJ45
-<!-- required => necessary -->
 
 {% highlight plaintext %}
 me: I'll toss Ethernet cables, won't be needing them

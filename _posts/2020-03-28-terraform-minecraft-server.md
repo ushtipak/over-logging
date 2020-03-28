@@ -78,7 +78,7 @@ After playing, fire up the `wrapup` to retrieve generated world,
 so that it can be (automatically) synced with new server in the future
 
 {%highlight plaintext %}
-m@mrmeeseeks:~/live-test/terraform-minecraft-server$ ./wrapup.sh
+$ ./wrapup.sh
 wrapup start
   rollback [saves/world-2020-03-28-13-32-53-968197585]
   archived [!]

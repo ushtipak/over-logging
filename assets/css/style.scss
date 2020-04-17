@@ -1,0 +1,112 @@
+---
+---
+
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+@import "{{ site.theme }}";
+
+@mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3)
+{
+    background-color:$rebase03;
+    color:$rebase0;
+    * { color:$rebase0; }
+    h1,h2,h3,h4,h5,h6 { color:$rebase1; border-color: $rebase0; }
+    a, a:active, a:visited { color: $rebase1; }
+}
+@mixin accentize($accent) {
+    a, a:active, a:visited, code.url { color: $accent; }
+    h1,h2,h3,h4,h5,h6 {color:$accent}
+}
+html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
+.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+html * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}
+
+html *, .light * {
+  color: $base1;
+}
+
+html, .light {
+  background-color: $base03;
+}
+
+body {
+  margin: 0.5rem;
+  background: $base03;
+}
+
+.project-name {
+ color: $base1;
+}
+
+.page-header {
+  background: $base03;
+}
+
+.main-content h1 {
+  color: $base1;
+}
+
+.main-content h2 {
+  color: $base1;
+}
+
+.main-content blockquote {
+  border-left: 0.3rem solid $orange;
+}
+
+.main-content code {
+  padding: 0.3rem 0.6rem 0.2rem 0.3rem;
+  background-color: $base0;
+  color: $base03;
+}
+
+.highlight {
+  background-color: $base03;
+}
+
+.main-content .highlight {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.main-content .highlight pre, .main-content pre {
+  margin: 0;
+  padding: 1rem;
+  background-color: $base02;
+}
+
+.main-content pre code, .main-content pre tt {
+  color: $base1;
+}
+
+.main-content pre {
+  border: solid 1px $base1;
+}
+
+.main-content table th, .main-content table td {
+  border: solid 1px $base1;
+}
+
+html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
+  margin: 0;
+  font-weight: bold;
+  color: $base1;
+}

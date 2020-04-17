@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "T-Shirt design vote backed by Android and Golang"
 categories: [android, golang]
 ---

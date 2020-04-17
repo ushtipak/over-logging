@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "AWS Lambda colleague name generator"
 categories: [aws, lambda]
 ---

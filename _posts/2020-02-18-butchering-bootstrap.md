@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Butchering bootstrap"
 categories: [bootstrap, reactjs]
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Rickroll from seemingly unlocked laptop"
 categories: [python, xflock]
 ---

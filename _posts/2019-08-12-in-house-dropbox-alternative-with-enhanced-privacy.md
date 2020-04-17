@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "In-house Dropbox alternative with enhanced privacy"
 categories: [golang, aes]
 ---

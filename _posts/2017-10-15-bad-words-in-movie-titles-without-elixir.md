@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bad words in movie titles without Elixir"
 categories: [python, elixir]
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Morse with LEDs on IOT for casual office messaging"
 categories: [iot]
 ---

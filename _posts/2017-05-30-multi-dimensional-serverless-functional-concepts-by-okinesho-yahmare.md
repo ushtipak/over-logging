@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Multi-dimensional serverless functional concepts by Okinesho Yahmare"
 categories: [tech, conferences]
 ---

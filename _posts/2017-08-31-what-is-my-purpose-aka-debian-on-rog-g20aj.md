@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "\"What is my purpose?\" (aka Debian on ROG G20AJ)"
 categories: [debian]
 ---

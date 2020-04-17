@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Build Raspi ⏰ with Unicorn HAT in just 6 months"
 categories: [raspi]
 ---

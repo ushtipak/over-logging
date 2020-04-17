@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Static website on S3 and away from WordPress"
 categories: [aws, s3, wordpress]
 ---

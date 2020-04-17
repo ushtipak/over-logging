@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Terraform Minecraft server"
 categories: [terraform, minecraft]
 ---

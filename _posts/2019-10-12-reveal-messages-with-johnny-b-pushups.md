@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Reveal messages with Johnny B pushups"
 categories: [css]
 ---

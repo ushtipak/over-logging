@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Pigeon Facts as a Service"
 categories: [bash]
 ---

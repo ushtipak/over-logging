@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Count valid words on registration plates with Elixir"
 categories: [elixir]
 ---

@@ -53,7 +53,12 @@ body {
 }
 
 .project-name {
- color: $base1;
+  color: $base1;
+}
+
+.project-date {
+  font-weight: bold;
+  color: $base0;
 }
 
 .page-header {

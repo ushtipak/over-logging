@@ -154,3 +154,11 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 .over-logging a, .over-logging a:active, .over-logging a:visited {
   color: $base01;
 }
+
+::selection {
+  background: $base00;
+}
+
+::-moz-selection {
+  background: $base00;
+}

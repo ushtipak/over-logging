@@ -65,6 +65,11 @@ body {
   background: $base03;
 }
 
+.main-content {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .main-content h1 {
   color: $base1;
 }
@@ -117,6 +122,7 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 }
 
 .site-footer {
+  margin-top: 4rem;
   border-top: solid 2px $base02;
 }
 

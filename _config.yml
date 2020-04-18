@@ -11,3 +11,4 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 github: [metadata]
+google_analytics: UA-163820575-1

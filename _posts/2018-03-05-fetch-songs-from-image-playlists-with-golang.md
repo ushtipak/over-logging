@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fetch songs from image playlists with Golang"
 categories: [golang, ocr]
 ---

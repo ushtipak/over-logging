@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Butchering bootstrap"
 categories: [bootstrap, reactjs]
 ---
@@ -40,7 +39,7 @@ CSS trimmed down to 5961 lines (~42%); at long last – 378 in total
 
 In begging, it was pure abundance:
 
-{% highlight shell %}
+{% highlight plaintext %}
 dist/assets/js$ ls -1 | wc -l
 34
 dist/assets/js$ du -sh .
@@ -56,7 +55,7 @@ Solution was to rewrite what was actually needed
 
 ## Outcome
 
-{% highlight shell %}
+{% highlight plaintext %}
 dist$ du -sh assets/js/
 8,0K	assets/js/
 {% endhighlight %}
@@ -71,7 +70,7 @@ Arise Digital Ocean's Spaces with `Restricted File Listing` CDN:
 
 ... and a quick Gzip in Nginx w/ Terraform:
 
-{% highlight terraform %}
+{% highlight plaintext %}
   provisioner "remote-exec" {
     inline = [
       "sed -i 's/# gzip_/gzip_/g' /etc/nginx/nginx.conf",
@@ -105,7 +104,7 @@ We're no longer friends
 
 ## Outcome
 
-{% highlight shell %}
+{% highlight plaintext %}
 $ npm run build
 
 > gdesadecom@0.1.0 build /home/m/cpeople/workspace-wileecoyote/gdesadecom/pquark

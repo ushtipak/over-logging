@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "In-house Dropbox alternative with enhanced privacy"
 categories: [golang, aes]
 ---
@@ -145,7 +144,7 @@ configs and gluing remote repos, but it might be added in the future too
 Configuration (defaults to `/opt/disposition/disposition.yml`) is stored in
 YAML where the following needs to be provided:
 
-{% highlight yaml %}
+{% highlight plaintext %}
 ---
 root:
   plain: "/opt/disposition/plain"

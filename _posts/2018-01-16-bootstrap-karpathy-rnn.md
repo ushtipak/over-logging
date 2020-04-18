@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bootstrap Karpathy RNN"
 categories: [ml, char-rnn]
 ---

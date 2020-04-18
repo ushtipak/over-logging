@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Family Mode | Mute phone when connected to home WiFi"
 categories: [android]
 ---

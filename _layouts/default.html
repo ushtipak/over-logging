@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+<meta charset="UTF-8">
+{% seo %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+<header class="page-header" role="banner">
+<h1 class="over-logging"><a href="{{ site.url }}{{ site.baseurl }}/">Over Logging</a></h1>
+{% if page.title %}
+<h1 class="project-name">{{ page.title }}</h1>
+{% endif %}
+<p class="project-date">{{ page.date | date: "%Y / %m" }}</p>
+</header>
+<main id="content" class="main-content" role="main">
+{{ content }}
+<footer class="site-footer">
+<p class="site-footer-credits">
+<a href="https://github.com/ushtipak/">{% octicon mark-github height:32 aria-label:github %}</a>
+<a href="mailto:ushtipak@gmail.com">{% octicon mail height:32 aria-label:mail %}</a>
+</p>
+</footer>
+</main>
+</body>
+</html>

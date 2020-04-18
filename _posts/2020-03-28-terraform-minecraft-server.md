@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Terraform Minecraft server"
 categories: [terraform, minecraft]
 ---
@@ -14,7 +13,7 @@ Since we're stuck at home – lets bootstrap a Minecraft server to play with our
 
 You'll need Terraform and a DigitalOcean API key
 
-{%highlight plaintext %}
+{% highlight plaintext %}
 $ git clone -q https://github.com/ushtipak/terraform-minecraft-server.git
 $ cd terraform-minecraft-server/
 $ ./init.sh
@@ -39,7 +38,7 @@ commands will detect it and remind you to do so if necessary.
 
 > usage
 
-echo export DO_PAT="XXXXXXXXXXXXXXXXXXXXXXXXX"
+echo export DO_PAT="XXXXXXXXXXXXXXXXXXXXXXXX"
 terraform apply                             \
   -var "do_token=${DO_PAT}"                 \
   -var "pub_key=$HOME/.ssh/XXXXXXXXXX.pub"  \
@@ -52,7 +51,7 @@ terraform apply                             \
 
 Export your DO token, populate vars and Terraform up
 
-{%highlight plaintext %}
+{% highlight plaintext %}
 $  export DO_PAT=░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 $ terraform apply                            \
 >   -var "do_token=${DO_PAT}"                \
@@ -77,7 +76,7 @@ minecraft-server = 157.230.░░░.░░░
 After playing, fire up the `wrapup` to retrieve generated world,
 so that it can be (automatically) synced with new server in the future
 
-{%highlight plaintext %}
+{% highlight plaintext %}
 $ ./wrapup.sh
 wrapup start
   rollback [saves/world-2020-03-28-13-32-53-968197585]

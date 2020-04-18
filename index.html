@@ -1,0 +1,7 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <span class="index-post">{{ post.date | date: "%Y / %m" }}<h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h1></span><br>
+{% endfor %}

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Tealhinator (occupation by RNN)"
 categories: [ml, char-rnn]
 ---
@@ -25,7 +24,7 @@ To retrieve all known professions, URL walk through initial
 is required. Titles from second level are subsequently fetched, and the special
 ones (e.g. _Category:_, _Talk:_) or references to nested lists are removed
 
-{% highlight python %}
+{% highlight plaintext %}
 import json
 import urllib.request
 
@@ -71,7 +70,7 @@ Based on the previous experience, _Amazon Linux_ distribution was used (~7-11x
 faster processing than remaining _default_ EC2 distros), now in the updated
 flavor of AL2
 
-{% highlight shell %}
+{% highlight plaintext %}
 echo -n "> bootstrap rnn ... "
 curl -s https://raw.githubusercontent.com/ushtipak/rnn-bootstrap/master/setup-rnn.sh | bash >/dev/null 2>&1
 rm /opt/rnn-karpathy/data/tinyshakespeare/ -rf && echo done

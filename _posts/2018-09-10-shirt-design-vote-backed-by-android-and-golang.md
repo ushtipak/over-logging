@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "T-Shirt design vote backed by Android and Golang"
 categories: [android, golang]
 ---
@@ -75,7 +74,7 @@ All patched up – running behind npm's _live-server_ with iptables re-routing
 (live-server doesn't take kindly to port 80, and it would be lame to reside on
 something like 3000), hence –
 
-{% highlight shell %}
+{% highlight plaintext %}
 iptables -t nat -A PREROUTING -i eth0 -p tcp \
   --dport 80 -j REDIRECT --to-port 8080
 {% endhighlight %}

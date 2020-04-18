@@ -78,7 +78,7 @@ body {
 }
 
 .main-content code {
-  padding: 0.3rem 0.6rem 0.2rem 0.3rem;
+  padding: 0.3rem 0.3rem 0.2rem 0.3rem;
   background-color: $base0;
   color: $base03;
 }
@@ -114,4 +114,18 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
   margin: 0;
   font-weight: bold;
   color: $base1;
+}
+
+.site-footer {
+  border-top: solid 2px $base02;
+}
+
+.site-footer-credits {
+  font-weight: bold;
+  text-align: center;
+  word-spacing: 2rem;
+}
+
+svg {
+  fill: $base01;
 }

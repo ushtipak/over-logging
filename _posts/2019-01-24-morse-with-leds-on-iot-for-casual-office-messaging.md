@@ -39,14 +39,14 @@ showing how to toggle LEDs, get button press events and fire up a basic server
 
 In our case, message in plain text is passed as a GET:
 
-{% highlight shell %}
+{% highlight plaintext %}
 curl 'http://192.168.3.45/ur_code_is_bad_and_u_should_feel_bad'
 {% endhighlight %}
 
 
 *messageText* is then retrieved from `req.url` and passed on to Morse encoder:
 
-{% highlight javascript %}
+{% highlight plaintext %}
 messageMorse = messageText
   .split('')
   .map(function(e) {

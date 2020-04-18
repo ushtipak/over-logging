@@ -33,7 +33,7 @@ gently
 Based on above `lambda_handler` function name – and the fact we're using Python –
 here is the overview of configuration options
 
-{% highlight yaml %}
+{% highlight plaintext %}
 Runtime: Python 3.6
 Handler: lambda_function.lambda_handler
 Role: Choose an existing role
@@ -51,7 +51,7 @@ KMS key: (default) aws/lambda
 In order to verify that function returns correct JSON with name and UTF-8 chars,
 use empty curly brackets for _Input test event_ and validate output
 
-{% highlight json %}
+{% highlight plaintext %}
 {
   "name": "Гомеслав"
 }
@@ -72,7 +72,7 @@ order to achieve that
 
 Changes on the _Integration Request_ are basic
 
-{% highlight yaml %}
+{% highlight plaintext %}
 Integration type: Lambda Function
 Use Lambda Proxy integration: [ ]
 Invoke with caller credentials: [ ]
@@ -86,7 +86,7 @@ _Integration Response_, however, demands more alteration. Within HTTP 200
 response set _Content-Type_ and define body mapping so that function return
 is parsed as part of HTML
 
-{% highlight yaml %}
+{% highlight plaintext %}
 Lambda Error Regex: default
 Content handling: Passthrough
 
@@ -115,7 +115,7 @@ lambda are accessed via `inputRoot._`
 Last step before hitting _Actions / Deploy API_ is adding "Content-Type" within
 _Method Response_ and modifying response body for HTTP 200
 
-{% highlight yaml %}
+{% highlight plaintext %}
 Response Headers for 200:
   Name: Content-Type
 

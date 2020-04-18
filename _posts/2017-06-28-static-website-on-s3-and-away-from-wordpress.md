@@ -137,7 +137,7 @@ Redirect requests to original one
   * Create policy to allow object get, per AWS
     [reference](http://docs.aws.amazon.com/AmazonS3/latest/dev/HostingWebsiteOnS3Setup.html "reference")
 
-    {% highlight json %}
+    {% highlight plaintext %}
     {
         "Version": "2012-10-17",
         "Statement": [

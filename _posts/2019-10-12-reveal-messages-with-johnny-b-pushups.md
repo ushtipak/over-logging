@@ -22,7 +22,7 @@ Named after Cartoon Network's famous Johnny, lays a project that might help
 
 You "encode" a message of your choice with a bash helper:
 
-{% highlight shell %}
+{% highlight plaintext %}
 usage: ./jb <message>
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ results during the training
 Try it – checkout the [code](https://github.com/ushtipak/jbravo/), think of
 a message that'll hold you for some time and `./jb` it
 
-{% highlight shell %}
+{% highlight plaintext %}
 $ ./jb '?1337'
 $ ls *html
 09-10-2019-PzEzMzcK.html

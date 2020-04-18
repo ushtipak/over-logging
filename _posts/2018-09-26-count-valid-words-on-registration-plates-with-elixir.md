@@ -36,7 +36,7 @@ far the [Wikipedia](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of
 entry. Fetching purely region IDs from this location requires some code and
 either CSS selector or XPath, so Golang and _antchfx/htmlquery_ are called in:
 
-{% highlight golang %}
+{% highlight plaintext %}
 w := bufio.NewWriter(f)
 for _, n := range htmlquery.Find(doc, xPath) {
     _, err := w.WriteString(htmlquery.InnerText(n) + "\n")
@@ -68,7 +68,7 @@ Worker (configured with _{:size, 64}, {:max_overflow, 32}_) is in charge of
 ensuring that word being checked indeed starts with 2 letters available in
 gathered city codes:
 
-{% highlight elixir %}
+{% highlight plaintext %}
 def handle_call({word, plate_codes}, _from, state) do
   for plate_code <- plate_codes do
     is_valid = String.starts_with?(String.downcase(word), String.downcase(plate_code))
@@ -88,7 +88,7 @@ prefixes), while the following stream over _wordlist_file_ (_wamerican_ dict)
 relies extensively on Elixir's Pipe Operator (taking result of one expression
 and passing it on, shell-like)
 
-{% highlight shell %}
+{% highlight plaintext %}
 $ wc -l < /usr/share/dict/words
 102401
 {% endhighlight %}
@@ -99,7 +99,7 @@ gets rid of trailing spaces; that output is fed to a _fn_ which filters only 4
 chars phrases, which is further the input sent to poolboy workers (generic
 pooling lib for Erlang), ones that do the lifting:
 
-{% highlight elixir %}
+{% highlight plaintext %}
 defmodule Execute do
   @timeout 1000
 
@@ -138,7 +138,7 @@ Docker
 
 ![Ain't nobody got time for Elixir dev]({{ site.url }}{{ site.baseurl}}/assets/2018-09-26-count-valid-words-on-registration-plates-with-elixir/aint-nobody-got-time-for-that.jpg)
 
-{% highlight shell %}
+{% highlight plaintext %}
 FROM elixir
 MAINTAINER ushtipak@gmail.com
 RUN apt-get -y update

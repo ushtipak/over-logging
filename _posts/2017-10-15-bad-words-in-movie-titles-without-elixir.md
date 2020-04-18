@@ -29,7 +29,7 @@ speaking originated" films targeted. Python's BeautifulSoup and threading
 module scraped data in about 20 seconds for all existing titles, ever,
 rendering implementation of this step trivial in Elixir
 
-{% highlight python %}
+{% highlight plaintext %}
 bs = BeautifulSoup(urlopen(Request(
     url, headers={'User-Agent': 'Mozilla/5.0'})), "html.parser")
 

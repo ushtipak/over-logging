@@ -20,7 +20,7 @@ API, Bash shell with `nc` was chosen, based on it's supreme benchmarks
 
 Netcat is handling the routing, with responses passing through a FIFO pipe
 
-{% highlight shell %}
+{% highlight plaintext %}
 cat "${PFAAS_PIPE}" | nc -n -l -p ${PFAAS_PORT} > >(
   while read l; do
     # [ ... ]
@@ -32,7 +32,7 @@ cat "${PFAAS_PIPE}" | nc -n -l -p ${PFAAS_PORT} > >(
 Facts are read from a separate file and fed into an array that is used to show
 either a random or a specific fact (`/api/fact/{id}`)
 
-{% highlight shell %}
+{% highlight plaintext %}
 IFS=,$'\n' read -d '' -a FACTS < ${PFAAS_FACTS}
 # [ ... ]
 id=$RANDOM
@@ -63,7 +63,7 @@ Failed requests:        0
 
 > Apache Bench – 1 req
 
-{% highlight shell %}
+{% highlight plaintext %}
 $ ab -n 2 -c 1 http://localhost:1805/api/fact/ > /dev/null
 apr_socket_recv: Connection refused (111)
 {% endhighlight %}

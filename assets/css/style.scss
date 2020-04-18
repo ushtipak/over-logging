@@ -53,6 +53,7 @@ body {
 }
 
 .project-name {
+  padding-top: 2rem;
   color: $base1;
 }
 
@@ -142,4 +143,14 @@ svg {
 
 html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
   color: $base1;
+}
+
+.over-logging {
+  margin-top: 0;
+  padding-bottom: 2rem;
+  border-bottom: solid 2px $base02;
+}
+
+.over-logging a, .over-logging a:active, .over-logging a:visited {
+  color: $base01;
 }

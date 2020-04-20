@@ -4,7 +4,7 @@ categories: [coursera, selenium]
 ---
 
 
-As a continuation to the [List of free Coursera courses](http://localhost:4000/over-logging/coursera/selenium/2020/04/20/list-of-free-coursera-courses.html),
+As a continuation to the [List of free Coursera courses](https://ushtipak.github.io/over-logging/coursera/selenium/2020/04/20/list-of-free-coursera-courses.html),
 here is the audit-only index for all categories
 
 

@@ -32,7 +32,7 @@ It allowed a `as-human-as-possible` data retrieval in three phases:
 * Retrieve [surface info](https://github.com/ushtipak/coursera-scout/blob/master/stage_2_get_courses.py) on all courses from all categories
 * Check [enrollment options](https://github.com/ushtipak/coursera-scout/blob/master/stage_3_get_offerings.py) for each (with login and simulated activity)
 
-Same setup yielded an additional list of courses that are [available for audit](http://localhost:4000/over-logging/coursera/selenium/2020/04/21/auditable-coursera-courses.html)
+Same setup yielded an additional list of courses that are [available for audit](https://ushtipak.github.io/over-logging/coursera/selenium/2020/04/21/auditable-coursera-courses.html)
 
 
 # Categories

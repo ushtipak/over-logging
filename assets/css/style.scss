@@ -162,3 +162,8 @@ html a, html a:active, html a:visited, .light a, .light a:active, .light a:visit
 ::-moz-selection {
   background: $base00;
 }
+
+.logo {
+  transform: scaleY(-1);
+}
+
